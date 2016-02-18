@@ -53,7 +53,7 @@
 
 
 		var base_image = new Image();
-		  base_image.src = 'zzz.png';
+		  base_image.src = 'polFil_1_BlackWhite.jpg';
 		  base_image.onload = function(){
 			context.drawImage(base_image, 0, 0);
 			console.log("draw");
@@ -105,7 +105,7 @@
 
 <body>
    <h1>hello picture</h1>
-   <img src="zzz.png" id="image" style= rotate="90"">
+   <img src="polFil_1_BlackWhite.jpg" id="image" style= rotate="90"">
    <button onclick="ALL()">Click me</button>
    <canvas id="canvas"></canvas>
 
@@ -121,7 +121,7 @@
 function fabricXXX(){
  // var canvas = new fabric.Canvas('canvas');
  console.log("canvas: " + canvas);
-  fabric.Image.fromURL('xxx.jpg', function(img) {
+  fabric.Image.fromURL('polFil_1_BlackWhite.jpg', function(img) {
      // add filter
       img.filters.push(new fabric.Image.filters.Grayscale());
       // apply filters and re-render canvas when done
